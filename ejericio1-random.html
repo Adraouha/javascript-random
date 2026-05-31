@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adivina el número</title>
+</head>
+<body>
+
+<script>
+
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+let intento = 0;
+let respuesta;
+
+while (respuesta != numeroSecreto) {
+
+    respuesta = parseInt(prompt("Adivina el número (1 al 10)"));
+
+    intento++;
+
+    if (respuesta != numeroSecreto) {
+        alert("Incorrecto, vuelve a intentarlo");
+    }
+}
+
+alert("¡Correcto! Has acertado en " + intento + " intentos.");
+
+</script>
+
+</body>
+</html>
